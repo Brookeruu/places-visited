@@ -1,14 +1,14 @@
+//
+// var placesArray = [];
+// console.log(placesArray);
 
-var placesArray = [];
-console.log(placesArray);
-
-// function PlacesVisited() {
-//   this.places = []
-// }
-// //
-// PlacesVisited.prototype.addPlaces = function(vacay) {
-//     this.places.push(vacay);
-// }
+function PlacesVisited() {
+  this.places = []
+}
+//
+PlacesVisited.prototype.addPlaces = function(vacay) {
+    this.places.push(vacay);
+}
 
 function Location(state,landmarks,date,description) {
   this.state = state,
@@ -21,13 +21,15 @@ $(document).ready(function() {
   $("#form").submit(function(event) {
     event.preventDefault();
 debugger;
+  var placesVisted = new PlacesVisited();
   var state = $("#state").val();
   var landmark = $("#landmark").val();
   var date = $("#date").val();
   var description = $("#description").val();
   var vacay = new Location(state,landmark,date,description);
+  placesVisited.addPlaces(vacay);
 
-  placesArray.push(vacay);
+  // placesArray.push(vacay);
   //PlacesVisited
 
  });
