@@ -16,12 +16,12 @@ function Location(state,landmarks,date,description) {
   this.date = date,
   this.description = description
 }
+var placesVisited = new PlacesVisited();
 
 $(document).ready(function() {
   $("#form").submit(function(event) {
     event.preventDefault();
 debugger;
-  var placesVisted = new PlacesVisited();
   var state = $("#state").val();
   var landmark = $("#landmark").val();
   var date = $("#date").val();
