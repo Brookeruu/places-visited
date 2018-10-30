@@ -12,20 +12,26 @@
 </head>
 <body>
   <div class="container">
-    <div class="">
+
       <form class="form" id= "form">
-
         <h2>Places I've Been</h2>
-        <input type="text" id="state" value="">Location</input>
-        <input type="text" id="landmark" value="">Landmark</input>
-        <input type="text" id="date" value="">Date</input>
-        <input type="text" id="description" value="">Description</input>
+        <input type="text" id="new-state" placeholder="Location"="">
+        <input type="text" id="new-landmark" placeholder="Landmark"="">
+        <input type="text" id="new-date" placeholder="Date"="">
+        <input type="text" id="new-description" placeholder="Description"="">
         <button id="button" type="submit" name="button" class="btn btn-info">Click Me!</button>
-        <p>You've been to:</p>
-        <ul>
-
-        </ul>
       </form>
+
+    <h3>Places:</h3>
+    <ul id="places">
+    </ul>
+
+    <div id="showPlaces">
+      <p id=clickState>Location: <span class="state"></span></p>
+      <p id="clickLandmark">Location: <span class="landmark"></span></p>
+      <p id="clickDate">Location: <span class="date"></span></p>
+      <p id="clickDescription">Location: <span class="description"></span></p>
+
     </div>
   </div>
 </body>
