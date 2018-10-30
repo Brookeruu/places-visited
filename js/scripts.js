@@ -45,9 +45,10 @@ $(document).ready(function() {
   displayPlaceDetails(placesVisited);
 
 
-  $("p").click(function() {
-    $(this).slideToggle();
-    $(this).siblings().slideToggle();
+  $("li").click(function() {
+    $(this).toggle();
+    
+
   });
 
   // placesArray.push(vacay);
